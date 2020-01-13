@@ -1,0 +1,4 @@
+FROM node:latest
+RUN npm i
+EXPOSE 8000
+CMD ["npm", "start"]
