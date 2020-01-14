@@ -2,5 +2,6 @@ FROM node:latest
 WORKDIR /opt/app-root/
 COPY package*.json /opt/app-root/
 RUN npm install
+COPY . /opt/app-root/
 EXPOSE 8000
 CMD ["npm", "start"]
