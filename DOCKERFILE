@@ -1,4 +1,6 @@
 FROM node:latest
-RUN npm i
+WORKDIR /opt/app-root/
+COPY package*.json /opt/app-root/
+RUN npm install
 EXPOSE 8000
 CMD ["npm", "start"]
